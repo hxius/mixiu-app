@@ -26,7 +26,7 @@ module.exports = {
     subSidebar: 'auto',
     nav: [
       { text: '首页', link: '/' },
-      { text: '米修JavaScript博客', 
+      { text: '米修JavaScript博客11', 
         items: [
           { text: 'Github', link: 'https://github.com/mqyqingfeng' },
           { text: '掘金', link: 'https://juejin.cn/user/712139234359182/posts' }
