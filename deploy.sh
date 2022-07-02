@@ -1,6 +1,5 @@
 #!/usr/bin/env sh
 
-# 确保脚本抛出遇到的错误
 set -e
 
 # 生成静态文件
@@ -23,5 +22,5 @@ git config --global user.email "bebe1757@163.com"
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 git push -f git@github.com:hxius/hxius.github.io.git main
-
+rm -rf dist
 cd -
