@@ -3,12 +3,6 @@ module.exports = {
   port: '3001',
   title: '米修·记忆',
   description: '道格拉斯·米修',
-  // base: '/',
-  locales: {
-    '/': {
-      lang: 'zh-CN'
-    }
-  },
   base: '/',
   head: [
     ['link', { rel: 'icon', href: '/common/logo.png' }],
@@ -33,7 +27,8 @@ module.exports = {
         path: '/',
         collapsable: false, // 不折叠
         children: [
-          { title: "关于", path: "/handbook/about" }
+          { title: "关于", path: "/handbook/about" },
+          { title: 'markdown语法', path: '/handbook/grammar'}
         ]
       },
       {
@@ -43,6 +38,14 @@ module.exports = {
           { title: "条件类型", path: "/handbook/ConditionalTypes" },
           { title: "泛型", path: "/handbook/Generics" }
         ],
+      },
+      {
+        title: '代码管理',
+        path: '/code',
+        children: [
+          { title: 'git管理', path: '/code/git' },
+          { title: '代码规范', path: '/code/standard'}
+        ]
       },
       {
         title: '计算机基础',
@@ -74,6 +77,15 @@ module.exports = {
       },
       {
         title: '服务器'
+      },
+      {
+        title: '数学',
+        path: '/math',
+        children: [
+          { title: '线性代数', path: '/math/Linear-Algebra' },
+          { title: '微积分', path: '/math/Calculus' },
+          { title: '统计学', path: '/math/Statistics' }
+        ]
       }
     ]
   },
