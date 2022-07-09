@@ -93,13 +93,13 @@ module.exports = {
               }
             ],
           },
-          { title: 'Python', path: '/backend/python', 
-            children: [
-              { title: 'Django', path: '/backend/python/django' },
-              { title: '数据分析', path: '/backend/python/django' },
-              { title: '爬虫', path: '/backend/python/django' },
-            ]
-          }
+          // { title: 'Python', path: '/backend/python', 
+          //   children: [
+          //     { title: 'Django', path: '/backend/python/django' },
+          //     { title: '数据分析', path: '/backend/python/django' },
+          //     { title: '爬虫', path: '/backend/python/django' },
+          //   ]
+          // }
         ]
       },
       {
@@ -117,7 +117,7 @@ module.exports = {
     ]
   },
   markdown: {
-    lineNumbers: true,
+    lineNumbers: true, // 代码显示行号
   },
   // theme: 'reco',
   // themeConfig: {

@@ -22,5 +22,5 @@ git config --global user.email "bebe1757@163.com"
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 git push -f git@github.com:hxius/hxius.github.io.git main
-rm -rf ./docs/.vuepress/dist
 cd -
+rm -rf ./docs/.vuepress/dist
