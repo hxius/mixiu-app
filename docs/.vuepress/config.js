@@ -7,19 +7,20 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/common/logo.png' }],
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
-    ['meta', { name: 'keywords', content: '米修,博客,conimi,mixiu'}]
+    ['meta', { name: 'keywords', content: '米修,博客,conimi,mixiu' }],
   ],
   theme: 'reco',
   themeConfig: {
     subSidebar: 'auto',
     nav: [
       { text: '首页', link: '/' },
-      { text: '米修博客', 
+      {
+        text: '米修博客',
         items: [
           { text: 'Github', link: 'https://github.com/mqyqingfeng' },
-          { text: '掘金', link: 'https://juejin.cn/user/712139234359182/posts' }
-        ]
-      }
+          { text: '掘金', link: 'https://juejin.cn/user/712139234359182/posts' },
+        ],
+      },
     ],
     sidebar: [
       {
@@ -27,16 +28,16 @@ module.exports = {
         path: '/',
         collapsable: false, // 不折叠
         children: [
-          { title: "关于", path: "/handbook/about" },
-          { title: 'markdown语法', path: '/handbook/grammar'}
-        ]
+          { title: '关于', path: '/handbook/about' },
+          { title: 'markdown语法', path: '/handbook/grammar' },
+        ],
       },
       {
-        title: "基础学习",
+        title: '基础学习',
         path: '/handbook/ConditionalTypes',
         children: [
-          { title: "条件类型", path: "/handbook/ConditionalTypes" },
-          { title: "泛型", path: "/handbook/Generics" }
+          { title: '条件类型', path: '/handbook/ConditionalTypes' },
+          { title: '泛型', path: '/handbook/Generics' },
         ],
       },
       {
@@ -44,16 +45,16 @@ module.exports = {
         path: '/code',
         children: [
           { title: 'git管理', path: '/code/git' },
-          { title: '代码规范', path: '/code/standard'}
-        ]
+          { title: '代码规范', path: '/code/standard' },
+        ],
       },
       {
         title: '计算机基础',
         path: '/computer-basics/composition-principle',
         children: [
-          { title: "组成原理", path: "/computer-basics/composition-principle" },
-          { title: "操作系统", path: "/computer-basics/operating-system" },
-          { title: "网路", path: "/computer-basics/computer-network" }
+          { title: '组成原理', path: '/computer-basics/composition-principle' },
+          { title: '操作系统', path: '/computer-basics/operating-system' },
+          { title: '网路', path: '/computer-basics/computer-network' },
         ],
       },
       {
@@ -62,48 +63,48 @@ module.exports = {
         children: [
           { title: 'CSS', path: '/frontend/styles' },
           { title: 'JavaScript', path: '/frontend/javascript' },
-          { 
-            title: '框架', 
+          {
+            title: '框架',
             path: '/frontend/frame',
             children: [
               { title: 'Vue', path: '/frontend/frame/vue' },
-              { title: 'React', path: '/frontend/frame/react' }
-            ]
-          }
-        ]
+              { title: 'React', path: '/frontend/frame/react' },
+            ],
+          },
+        ],
       },
       {
         title: '后端',
         path: '/backend',
         children: [
-          { 
-            title: 'Java', 
-            path: '/backend/java', 
+          {
+            title: 'Java',
+            path: '/backend/java',
             children: [
               { title: '基础', path: '/backend/java/basic' },
-              { 
-                title: '框架', 
+              {
+                title: '框架',
                 path: '/backend/java/iframe',
                 children: [
                   { title: 'Spring', path: '/backend/java/iframe/spring' },
                   { title: 'SpringBoot', path: '/backend/java/iframe/springboot' },
                   { title: 'SpringCloud', path: '/backend/java/iframe/springcloud' },
-                  { title: 'Mybatis', path: '/backend/java/iframe/mybatis' }
-                ] 
-              }
+                  { title: 'Mybatis', path: '/backend/java/iframe/mybatis' },
+                ],
+              },
             ],
           },
-          // { title: 'Python', path: '/backend/python', 
+          // { title: 'Python', path: '/backend/python',
           //   children: [
           //     { title: 'Django', path: '/backend/python/django' },
           //     { title: '数据分析', path: '/backend/python/django' },
           //     { title: '爬虫', path: '/backend/python/django' },
           //   ]
           // }
-        ]
+        ],
       },
       {
-        title: '服务器'
+        title: '服务器',
       },
       {
         title: '数学',
@@ -111,10 +112,11 @@ module.exports = {
         children: [
           { title: '线性代数', path: '/math/Linear-Algebra' },
           { title: '微积分', path: '/math/Calculus' },
-          { title: '统计学', path: '/math/Statistics' }
-        ]
-      }
-    ]
+          { title: '统计学', path: '/math/Statistics' },
+          { title: '高等数学', path: '/math/AdvancedMath' },
+        ],
+      },
+    ],
   },
   markdown: {
     lineNumbers: true, // 代码显示行号
@@ -203,10 +205,10 @@ module.exports = {
   //         content: "复制成功!"
   //     }
   //   }],
-  //   ['@vuepress/last-updated', 
+  //   ['@vuepress/last-updated',
   //     {
   //       transformer: (timestamp, lang) => {
-  //         return (new Date(timestamp)).toUTCString() 
+  //         return (new Date(timestamp)).toUTCString()
   //         //或者用下面这段
   //         // const moment = require('moment')
   //         // moment.locale(lang)
