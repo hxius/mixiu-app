@@ -10,7 +10,6 @@ pnpm install
 
 ### 本地运行
 
-<<<<<<< HEAD
 pnpm run dev
 
 ### 构建生成静态网站
