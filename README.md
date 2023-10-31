@@ -10,6 +10,7 @@ pnpm install
 
 ### 本地运行
 
+<<<<<<< HEAD
 pnpm run dev
 
 ### 构建生成静态网站
@@ -35,3 +36,7 @@ https://github.com/hxius/hxius.github.io
 ### 个人网站
 
 http://mixiu.site/
+
+### 仓库地址
+
+https://github.com/hxius/mixiu-app.git

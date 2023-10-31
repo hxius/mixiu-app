@@ -12,10 +12,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "less": "^4.1.3",
-    "less-loader": "^11.0.0",
-    "node-sass": "^7.0.1",
-    "sass-loader": "^13.0.2",
     "vuepress": "^1.9.7",
     "vuepress-theme-reco": "^1.6.13"
   }
